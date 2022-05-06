@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8" />
+
+  <title>Mobility Pattern in NYC</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/css_mapbox.css">
+  <script src="js/chroma.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.3/underscore-umd-min.js"></script>
+  <script src="https://kit.fontawesome.com/a6ea89134d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.js"></script>
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.css" type="text/css">
+
+</head>
+<body>
+
+  <h1 class="topnav">COVID-19's Impact on Human Mobility Pattern in NYC</h1>
+  <div class="line"></div>
+  <p class="text">This Map Illustrates Visit Counts of Places in NYC</p>
+
+  <div class='content'>
+    <div class='map-container'>
+        <div id="counts" class="map"></div>
+        <div id="equity" class="map"></div>
+    </div>
+
+
+  <div class="plot-section">
+      <label for="year-level-select">Year</label>
+      <select id="year-level-select" class="form-select">
+        <option>2019</option>
+        <option>2020</option>
+        <option>2021</option>
+        <option>Total</option>
+      </select>
+
+      <label for="industry-select">Industry</label>
+      <select id="industry-level-select" class="form-select">
+        <option>Education</option>
+        <option>Transportation</option>
+        <option>Health Care</option>
+        <option>Food</option>
+        <option>Wholesale</option>
+        <option>Total</option>
+      </select>
+
+
+      <div class="plot-content">
+        <canvas id="myChartBar"></canvas>
+      </div>
+
+      <div class="plot-content">
+        <div class="cell_3">
+          <i class="fa-solid fa-otter fa-bounce fa-2x"
+            style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y:1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y:1; " >
+        </i>
+        <h3>Total Visit Count</h3>
+        <h5 class='visit' id='visit'>330309</h5>
+        </div>
+
+        <div class="cell_4">
+          <i class="fa-solid fa-frog fa-bounce fa-2x"
+          style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y:1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y:1; " >
+          </i>
+          <h3>Most Popular Place</h3>
+          <h5 class='dwell' id='dwell'>Tract ID: 36061008100 <br><br> in Manhattan</h5>
+          <button id="fly">Take me there!</button>
+        </div>
+      </div>
+       -->
+  </div>
+
+  <!-- Leaflet JavaScript -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+  <script src="https://unpkg.com/showdown@1.9.0/dist/showdown.min.js"></script>
+
+  <script src="data_2.js"></script>
+  <script src="js/index_mapbox.js"></script>
+
+</body>
+</html>
