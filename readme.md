@@ -33,22 +33,31 @@ This map uses the smart-device pattern data from December to January in 2019-202
 <p align="center">
     Total Visit in 2019
 </p>
+
 ![map of total visit counts in 2020](https://github.com/Xiaoyi-Wu0711/mobility_web/blob/main/fig/MAP_TOTAL_2020.png)
 <p align="center">
     Total Visit in 2020
 </p>
+
 ![map of total visit counts in 2021](https://github.com/Xiaoyi-Wu0711/mobility_web/blob/main/fig/MAP_TOTAL_2021.png)
 <p align="center">
     Total Visit in 2021
 </p>
-- Particularly, Upper Manhanttan has experienced large decreasing degree of visit count during the outbreak of COVID-19, however, they're the places with **high poverty rate**. 
+- Particularly, Upper Manhanttan has experienced large decreasing degree of visit count during the outbreak of COVID-19, however, they're the places with <b>high poverty rate</b>.
+
 ![poverty rate](https://github.com/Xiaoyi-Wu0711/mobility_web/blob/main/fig/poverty_rate.png)
+<p align="center">
+    Poverty Rate
+</p>
+
 - Necessay goods and services such as education, health care, food and wholesale and retail store are clusterring at Manhanttan. Thus, people have to take more visits to POIs in these categories in Manhanttan.
+
 ![total visit](https://github.com/Xiaoyi-Wu0711/mobility_web/blob/main/fig/total.png)
 <p align="center">
     Visits to different boroughs 
 </p>
 - However, people visits most often to Queen Borough for transportation POIs, since JFK Internationl Airport and Laguardia Airport are location in Queens.
+
 ![transportation visit](https://github.com/Xiaoyi-Wu0711/mobility_web/blob/main/fig/trans.png)
 <p align="center">
     Visits to transportation POIs in different boroughs
