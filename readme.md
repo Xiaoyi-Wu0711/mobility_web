@@ -29,18 +29,27 @@ This map uses the smart-device pattern data from December to January in 2019-202
 - Manhanttan is the most popular place in general in NYC, even it has experience hardest decrease in visit counts during COVID-19
 
 ![map of total visit counts in 2019](https://github.com/Xiaoyi-Wu0711/mobility_web/blob/main/fig/MAP_TOTAL_2019.png)
-Total Visit in 2019 
+<p align="center">
+    Total Visit in 2019
+</p>
 
 ![map of total visit counts in 2020](https://github.com/Xiaoyi-Wu0711/mobility_web/blob/main/fig/MAP_TOTAL_2020.png)
-Total Visit in 2020
+<p align="center">
+    Total Visit in 2020
+</p>
 
 ![map of total visit counts in 2021](https://github.com/Xiaoyi-Wu0711/mobility_web/blob/main/fig/MAP_TOTAL_2021.png)
-Total Visit in 2021
+<p align="center">
+    Total Visit in 2021
+</p>
 
 - Necessay goods and services such as education, health care, food and wholesale and retail store are clusterring at Manhanttan. Thus, people have to take more visits to POIs in these categories in Manhanttan.
 ![total visit](https://github.com/Xiaoyi-Wu0711/mobility_web/blob/main/fig/total.png)
-Visits to different boroughs 
-
+<p align="center">
+    Visits to different boroughs 
+</p>
 - However, people visits most often to Queen Borough for transportation POIs, since JFK Internationl Airport and Laguardia Airport are location in Queens.
 ![transportation visit](https://github.com/Xiaoyi-Wu0711/mobility_web/blob/main/fig/trans.png)
-Visits to transportation POIs in different boroughs 
+<p align="center">
+    Visits to transportation POIs in different boroughs
+</p>
