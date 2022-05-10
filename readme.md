@@ -27,7 +27,7 @@ This map uses the smart-device pattern data from December to January in 2019-202
 
 ## Conclusion
 
-- Manhanttan and JFK International Airport are the most popular place in NYC
+- Manhanttan and JFK International Airport are the most popular place in NYC.
 - All most every borough in NYC has experienced significant decrease in visit counts during the first month of COVID-19, and this decreasing trend ranging from March 2019 to March 2021.
 ![map of total visit counts in 2019](https://github.com/Xiaoyi-Wu0711/mobility_web/blob/main/fig/MAP_TOTAL_2019.png)
 <p align="center">
