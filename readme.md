@@ -42,7 +42,7 @@ This map uses the smart-device pattern data from December to January in 2019-202
     Total Visit in 2021
 </p>
 - Particularly, Upper Manhanttan has experienced large decreasing degree of visit count during the outbreak of COVID-19, however, they're the places with **high poverty rate**. 
-![poverty rate](https://github.com/Xiaoyi-Wu0711/mobility_web/blob/main/fig/poverty rate.png)
+![poverty rate](https://github.com/Xiaoyi-Wu0711/mobility_web/blob/main/fig/poverty_rate.png)
 - Necessay goods and services such as education, health care, food and wholesale and retail store are clusterring at Manhanttan. Thus, people have to take more visits to POIs in these categories in Manhanttan.
 ![total visit](https://github.com/Xiaoyi-Wu0711/mobility_web/blob/main/fig/total.png)
 <p align="center">
