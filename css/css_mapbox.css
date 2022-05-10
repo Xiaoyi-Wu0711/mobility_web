@@ -72,6 +72,7 @@ body * {
   margin-right: 0 !important;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
+  height: 600px;
 }
 
 /* .map-container {
