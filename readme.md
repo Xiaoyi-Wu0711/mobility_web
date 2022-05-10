@@ -1,6 +1,8 @@
 # Developer
 Xiaoyi Wu and Jamin Tan
 
+# Recommend Browser
+Chrome
 
 # Project Name
 COVID-19's Impact on Human Mobility and Social Equity in NYC
