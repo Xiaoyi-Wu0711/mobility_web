@@ -9,7 +9,6 @@
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet">
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -24,10 +23,11 @@
 
 </head>
 <body>
-
-  <h1 class="topnav">COVID-19's Impact on Human Mobility Pattern in NYC</h1>
-  <div class="line"></div>
-  <p class="text">This Map Illustrates Visit Counts of Places in NYC</p>
+  <div>
+    <h1 class="topnav">COVID-19's Impact on Human Mobility Pattern in NYC</h1>
+    <div class="line"></div>
+    <p class="text">This Map Illustrates Visit Counts of Places in NYC</p>
+  </div>
 
   <div class='content'>
     <div class='map-container'>
@@ -37,24 +37,25 @@
 
 
   <div class="plot-section">
-      <label for="year-level-select">Year</label>
-      <select id="year-level-select" class="form-select">
-        <option>2019</option>
-        <option>2020</option>
-        <option>2021</option>
-        <option>Total</option>
-      </select>
+      <div>
+        <label for="year-level-select">Year</label>
+        <select id="year-level-select" class="form-select">
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+          <option>Total</option>
+        </select>
 
-      <label for="industry-select">Industry</label>
-      <select id="industry-level-select" class="form-select">
-        <option>Education</option>
-        <option>Transportation</option>
-        <option>Health Care</option>
-        <option>Food</option>
-        <option>Wholesale</option>
-        <option>Total</option>
-      </select>
-
+        <label for="industry-select">Industry</label>
+        <select id="industry-level-select" class="form-select">
+          <option>Education</option>
+          <option>Transportation</option>
+          <option>Health Care</option>
+          <option>Food</option>
+          <option>Wholesale</option>
+          <option>Total</option>
+        </select>
+      </div>
 
       <div class="plot-content">
         <canvas id="myChartBar"></canvas>
@@ -78,7 +79,6 @@
           <button id="fly">Take me there!</button>
         </div>
       </div>
-       -->
   </div>
 
   <!-- Leaflet JavaScript -->

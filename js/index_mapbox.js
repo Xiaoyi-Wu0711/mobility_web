@@ -261,6 +261,7 @@ const myChartBar = new Chart(variable, {
     }]
   },
   options: {
+    maintainAspectRatio: false,
     plugins: {
       legend: false,
       title: {
