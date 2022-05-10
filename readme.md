@@ -26,7 +26,10 @@ This map uses the smart-device pattern data from December to January in 2019-202
 
 
 ## Conclusion
-- Manhanttan is the most popular place in general in NYC, even it has experience hardest decrease in visit counts during COVID-19
+
+- Manhanttan and JFK International Airport are the most popular place in NYC
+- 
+- All most every borough in NYC has experienced significant decrease in visit counts during the first month of COVID-19, and this decreasing trend ranging from March 2019 to March 2021.
 
 ![map of total visit counts in 2019](https://github.com/Xiaoyi-Wu0711/mobility_web/blob/main/fig/MAP_TOTAL_2019.png)
 <p align="center">
@@ -42,6 +45,9 @@ This map uses the smart-device pattern data from December to January in 2019-202
 <p align="center">
     Total Visit in 2021
 </p>
+
+- Particularly, Upper Manhanttan has experienced large decreasing degree of visit count during the outbreak of COVID-19, however, they're the places with high poverty rate. 
+![poverty rate](https://github.com/Xiaoyi-Wu0711/mobility_web/blob/main/fig/poverty rate.png)
 
 - Necessay goods and services such as education, health care, food and wholesale and retail store are clusterring at Manhanttan. Thus, people have to take more visits to POIs in these categories in Manhanttan.
 ![total visit](https://github.com/Xiaoyi-Wu0711/mobility_web/blob/main/fig/total.png)
