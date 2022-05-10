@@ -268,7 +268,8 @@ const myChartBar = new Chart(variable, {
       scales: {
         y: {
           beginAtZero: true,
-        }
+          max: 12000000
+                }
       }
     }
   }
