@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "eslint": "^8.6.0",
+    "eslint": "^8.15.0",
     "eslint-config-airbnb": "^19.0.4"
   },
   "eslintConfig": {
@@ -10,7 +10,6 @@
       "fetch": "readonly",
       "navigator": "readonly",
       "window": "readonly",
-
       "$": "readonly",
       "_": "readonly",
       "ApexCharts": "readonly",
@@ -18,7 +17,6 @@
       "L": "readonly",
       "mapboxgl": "readonly",
       "Plotly": "readonly",
-
       "htmlToElement": "readonly",
       "htmlToElements": "readonly"
     },

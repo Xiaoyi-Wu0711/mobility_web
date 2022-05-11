@@ -133,32 +133,32 @@ function buildMap(data, mapname, legend, dataStyleProp, map_type) {
   // define popup windows
   mapname.on('click', 'tractsLayer', (e) => {
     const pops = document.getElementsByClassName('mapboxgl-popup');
-    if (typeof pop !== 'undefined'){
-    for (let i = 0; i < pops.length; i++) {
-      pops[i].remove();
-    }
+    if (typeof pop !== 'undefined') {
+      for (let i = 0; i < pops.length; i++) {
+        pops[i].remove();
+      }
     }
     const pop2 = document.getElementsByClassName('mapboxgl-popup-content');
     if (typeof pop2 !== 'undefined') {
-    for (let i = 0; i < pop2.length; i++) {
-      pop2[i].remove();
-    }
+      for (let i = 0; i < pop2.length; i++) {
+        pop2[i].remove();
+      }
     }
     new mapboxgl.Popup()
       .setLngLat(e.lngLat)
       .setHTML(`Tract ID: ${e.features[0].properties.tract_id}<br>
-                2019 ${ind} Visit Count: ${e.features[0].properties[ `${2019}_${ind.toLowerCase().slice(0, 3)}`]}<br>
-                2020 ${ind} Visit Count: ${e.features[0].properties[ `${2020}_${ind.toLowerCase().slice(0, 3)}`]}<br>
-                2021 ${ind} Visit Count: ${e.features[0].properties[ `${2021}_${ind.toLowerCase().slice(0, 3)}`]}<br>
+                2019 ${ind} Visit Count: ${e.features[0].properties[`${2019}_${ind.toLowerCase().slice(0, 3)}`]}<br>
+                2020 ${ind} Visit Count: ${e.features[0].properties[`${2020}_${ind.toLowerCase().slice(0, 3)}`]}<br>
+                2021 ${ind} Visit Count: ${e.features[0].properties[`${2021}_${ind.toLowerCase().slice(0, 3)}`]}<br>
                 Poverty Rate: ${Math.round(e.features[0].properties.pctPoverty * 100)}%`)
       .addTo(countsMap);
     new mapboxgl.Popup()
       .setLngLat(e.lngLat)
       .setHTML(`Tract ID: ${e.features[0].properties.tract_id}<br>
-                2019 ${ind} Visit Count: ${e.features[0].properties[ `${2019}_${ind.toLowerCase().slice(0, 3)}`]}<br>
-                2020 ${ind} Visit Count: ${e.features[0].properties[ `${2020}_${ind.toLowerCase().slice(0, 3)}`]}<br>
-                2021 ${ind} Visit Count: ${e.features[0].properties[ `${2021}_${ind.toLowerCase().slice(0, 3)}`]}<br>
-                Poverty Rate: ${Math.round(e.features[0].properties.pctPoverty * 100)}%`)      
+                2019 ${ind} Visit Count: ${e.features[0].properties[`${2019}_${ind.toLowerCase().slice(0, 3)}`]}<br>
+                2020 ${ind} Visit Count: ${e.features[0].properties[`${2020}_${ind.toLowerCase().slice(0, 3)}`]}<br>
+                2021 ${ind} Visit Count: ${e.features[0].properties[`${2021}_${ind.toLowerCase().slice(0, 3)}`]}<br>
+                Poverty Rate: ${Math.round(e.features[0].properties.pctPoverty * 100)}%`)
       .addTo(equityMap);
   });
 
@@ -272,7 +272,7 @@ const myChartBar = new Chart(variable, {
         y: {
           beginAtZero: true,
           stacked: true,
-            }
+        }
       }
     }
   }
@@ -322,16 +322,16 @@ function plotUpdate() {
   const mostVisit = _.max(data.features, feature => parseInt(feature.properties[var_name], 10));
   document.getElementById('dwell').innerHTML = String(`Tract ID: ${mostVisit.properties.tract_id} <br><br>in ${mostVisit.properties.borough}`);
   myChartBar.update();
-  if (typeof(mostVisit.geometry.coordinates[0][0][0] === Object)){
+  if (typeof (mostVisit.geometry.coordinates[0][0][0] === Object)) {
     const lng = mostVisit.geometry.coordinates[0][0][0][0];
     const lat = mostVisit.geometry.coordinates[0][0][1][1];
     mostVisit_coord = [lng, lat];
     console.log(mostVisit_coord);
   } else {
-  const lng = mostVisit.geometry.coordinates[0][0][0];
-  const lat = mostVisit.geometry.coordinates[0][0][1];
-  mostVisit_coord = [lng, lat];
-  console.log(mostVisit_coord);
+    const lng = mostVisit.geometry.coordinates[0][0][0];
+    const lat = mostVisit.geometry.coordinates[0][0][1];
+    mostVisit_coord = [lng, lat];
+    console.log(mostVisit_coord);
   }
 }
 
@@ -371,7 +371,4 @@ document.getElementById('fly').addEventListener('click', () => {
     .setLngLat(mostVisit_coord)
     .setHTML(`<h3>The Most Popular Place<br>in ${year}, ${ind}<h3>`)
     .addTo(equityMap);
-}
-
-
-);
+});
