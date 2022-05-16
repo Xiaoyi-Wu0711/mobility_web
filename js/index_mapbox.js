@@ -322,7 +322,8 @@ function plotUpdate() {
   const mostVisit = _.max(data.features, feature => parseInt(feature.properties[var_name], 10));
   document.getElementById('dwell').innerHTML = String(`Tract ID: ${mostVisit.properties.tract_id} <br><br>in ${mostVisit.properties.borough}`);
   myChartBar.update();
-  if (typeof (mostVisit.geometry.coordinates[0][0][0] === Object)) {
+  console.log(typeof(mostVisit.geometry.coordinates[0][0][0]))
+  if (typeof (mostVisit.geometry.coordinates[0][0][0] === Array)) {
     const lng = mostVisit.geometry.coordinates[0][0][0][0];
     const lat = mostVisit.geometry.coordinates[0][0][1][1];
     mostVisit_coord = [lng, lat];
