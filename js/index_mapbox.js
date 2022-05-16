@@ -53,6 +53,10 @@ let equityMap = new mapboxgl.Map({
 const container = '.map-container';
 const map = new mapboxgl.Compare(countsMap, equityMap, container, {});
 
+map.on('load', function () {
+  map.resize();
+});
+
 // selector
 const yearLevelSelect = document.querySelector('#year-level-select');
 const indLevelSelect = document.querySelector('#industry-level-select');
@@ -322,15 +326,17 @@ function plotUpdate() {
   const mostVisit = _.max(data.features, feature => parseInt(feature.properties[var_name], 10));
   document.getElementById('dwell').innerHTML = String(`Tract ID: ${mostVisit.properties.tract_id} <br><br>in ${mostVisit.properties.borough}`);
   myChartBar.update();
-  console.log(typeof(mostVisit.geometry.coordinates[0][0][0]))
-  if (typeof (mostVisit.geometry.coordinates[0][0][0] === Array)) {
-    const lng = mostVisit.geometry.coordinates[0][0][0][0];
-    const lat = mostVisit.geometry.coordinates[0][0][1][1];
+  
+  console.log(mostVisit.geometry.coordinates[0][0][0])
+  console.log(typeof (mostVisit.geometry.coordinates[0][0][0]))
+  if (typeof (mostVisit.geometry.coordinates[0][0][0]) === "number") {
+    const lng = mostVisit.geometry.coordinates[0][0][0];
+    const lat = mostVisit.geometry.coordinates[0][0][1];
     mostVisit_coord = [lng, lat];
     console.log(mostVisit_coord);
   } else {
-    const lng = mostVisit.geometry.coordinates[0][0][0];
-    const lat = mostVisit.geometry.coordinates[0][0][1];
+    const lng = mostVisit.geometry.coordinates[0][0][0][0];
+    const lat = mostVisit.geometry.coordinates[0][0][0][1];
     mostVisit_coord = [lng, lat];
     console.log(mostVisit_coord);
   }

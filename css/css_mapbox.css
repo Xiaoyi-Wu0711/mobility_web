@@ -76,15 +76,14 @@ body * {
   top: 200px;
 }
 
-/* .map-container {
-  top: 30%;
-} */
+.map-container {
+}
 
 .map {
 	position: absolute;
   left: 0px;
 	width: 58%;
-  height: 600px;
+  height: calc(100% - 200px) !important;
 }
 
 
@@ -140,7 +139,7 @@ body * {
   color:white;
   padding: 1rem;
   width: 40%;
-  height: 600px;
+  height: calc(100% - 200px) !important;
   display: flex;
   flex-direction: column;
 }
